@@ -506,3 +506,7 @@ section {
   }
 }
 
+.logo img {
+  height: 40px;      /* perfect for navbar */
+  width: auto;
+}
