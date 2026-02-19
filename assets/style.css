@@ -163,8 +163,9 @@ footer {
 /* PROJECTS */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 14px;
     margin-top: 30px;
 }
 
@@ -207,6 +208,9 @@ footer {
 .project-card.yellow {
     border-top: 5px solid #0077b6;
 }
+
+
+
 
 /* CLICKABLE PROJECT LINKS */
 .project-link {
