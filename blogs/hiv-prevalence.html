@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Predicting HIV Prevalence in Kenya</title>
+
+  <!-- Main site styles -->
+  <link rel="stylesheet" href="../assets/style.css" />
+
+</head>
+
+<body>
+
+<a href="../blog.html" class="back-link">← Back to Blog</a>
+
+<article class="blog-article">
+
+  <h1>
+    Predicting HIV Prevalence in Kenya: A Logistic Regression Analysis
+  </h1>
+
+  <div class="article-meta">
+    Machine Learning · Public Health · Logistic Regression · Kenya (2000–2023)
+  </div>
+
+  <h2>Project Overview</h2>
+
+  <p>
+    This project investigates the relationship between health system strength,
+    financing mechanisms, and socioeconomic indicators in shaping HIV prevalence
+    trends in Kenya from 2000 to 2023.
+  </p>
+
+  <div class="highlight-box">
+    <p><strong>Research Question:</strong> Which socioeconomic and health system factors are the strongest predictors of high HIV prevalence in Kenya?</p>
+    <p><strong>Key Finding:</strong> Universal Health Coverage (UHC) for noncommunicable diseases, health expenditure per capita, and the share of private health spending jointly achieved <strong>100% classification accuracy</strong>.</p>
+  </div>
+
+  <h2>Dataset Description</h2>
+
+  <ul>
+    <li>Source: WHO Global Health Observatory</li>
+    <li>Period: 2000–2023 (24 years)</li>
+    <li>Total indicators: 49</li>
+    <li>Target variable: HIV prevalence (High &gt; 5.25%, Low ≤ 5.25%)</li>
+  </ul>
+
+  <h2>Methodology</h2>
+
+  <h3>Data Processing</h3>
+  <ul>
+    <li>Integrated six WHO datasets</li>
+    <li>Reshaped data to yearly wide format</li>
+    <li>Merged datasets on year</li>
+    <li>Handled missing values via thresholding and median imputation</li>
+    <li>Removed highly collinear predictors</li>
+  </ul>
+
+  <h3>Model Development</h3>
+  <ul>
+    <li>Algorithm: Logistic Regression (L2 regularization)</li>
+    <li>Feature scaling using StandardScaler</li>
+    <li>Train/Test split: 70/30 with stratification</li>
+    <li>Evaluation: Accuracy, Precision, Recall, F1-score, ROC AUC</li>
+  </ul>
+
+  <h2>Key Results</h2>
+
+  <p>
+    The final model selected three representative predictors:
+    UHC NCD coverage, private health expenditure share, and health expenditure per capita.
+  </p>
+
+  <div class="highlight-box">
+    <p><strong>Model Accuracy:</strong> 100%</p>
+    <p><strong>ROC AUC:</strong> 1.00</p>
+    <p><strong>Interpretation:</strong> Strong health systems and higher public health investment are associated with lower HIV prevalence.</p>
+  </div>
+
+  <h2>Policy Implications</h2>
+
+  <ul>
+    <li>Strengthen UHC coverage, especially for NCD services</li>
+    <li>Increase public health spending per capita</li>
+    <li>Reduce reliance on private and out-of-pocket health financing</li>
+    <li>Use financing indicators as early warning signals</li>
+  </ul>
+
+  <h2>Limitations</h2>
+
+  <ul>
+    <li>Small sample size (24 observations)</li>
+    <li>National-level aggregation masks regional variation</li>
+    <li>Wide confidence intervals indicate uncertainty in effect sizes</li>
+    <li>Causality cannot be inferred</li>
+  </ul>
+
+  <h2>Conclusion</h2>
+
+  <p>
+    This analysis demonstrates that HIV prevalence is closely tied to broader
+    health system performance. Investments in universal coverage and public health
+    financing play a critical role in long-term disease control.
+  </p>
+
+  <div class="tag-row">
+    <span class="tag">Machine Learning</span>
+    <span class="tag">Public Health</span>
+    <span class="tag">Logistic Regression</span>
+    <span class="tag">Kenya</span>
+  </div>
+
+</article>
+
+</body>
+</html>
