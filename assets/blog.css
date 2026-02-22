@@ -1,0 +1,130 @@
+/* =========================
+   BLOG LIST PAGE
+========================= */
+.blog {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.blog h2 {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+  color: #0a2540;
+}
+
+.section-intro {
+  text-align: center;
+  color: #555;
+  margin-bottom: 50px;
+  font-size: 1.07rem;
+  line-height: 1.7;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.blog-card {
+  background: #7d8692;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+}
+
+.blog-tag {
+  display: inline-block;
+  background: #959698;
+  color: #131314;
+  font-size: 0.75rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.blog-link {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #1d1e1e;
+}
+
+/* =========================
+   BLOG ARTICLE
+========================= */
+body {
+  background: #6c6e70;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.blog-article {
+  max-width: 900px;
+  margin: 10px auto 60px;
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.blog-article h1 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+  color: #0a2540;
+}
+
+.article-meta {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.blog-article h2 {
+  margin-top: 30px;
+  margin-bottom: 8px;
+  font-size: 1.35rem;
+  color: #0a2540;
+}
+
+.blog-article p {
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.blog-article ul,
+.blog-article ol {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   ARTICLE NAV + FOOTER
+========================= */
+.article-nav,
+.article-footer a {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #eef2ff;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.article-nav a:hover,
+.article-footer a:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+

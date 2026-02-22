@@ -8,20 +8,28 @@
   <!-- Main site styles -->
   <link rel="stylesheet" href="../assets/style.css">
 
-  <!-- Font Awesome (optional icons later) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-  <!-- Back navigation -->
-  <a href="../blog.html" class="back-link">← Back to Blog</a>
+  <!-- TOP NAV LINKS -->
+  <div class="article-nav" style="max-width:900px;margin:30px auto 0;padding:0 20px;">
+    <a href="../blog.html" class="back-link">← Back to Blog</a> |
+    <a href="../index.html" class="back-link">Home</a> |
+    <a href="https://github.com/peter-munyalo/CHILD-MALNUTRION"
+       target="_blank"
+       class="back-link">
+      View Project on GitHub →
+    </a>
+  </div>
 
   <article class="blog-article">
 
     <header class="article-header">
       <h1>Exploratory Data Analysis on Child Malnutrition</h1>
-
       <p class="article-meta">
         EDA · Public Health · Nutrition · Kenya
       </p>
@@ -53,11 +61,6 @@
 
     <section>
       <h2>Dataset Description</h2>
-      <p>
-        The dataset consists of child nutrition and health indicators collected from
-        national health surveys and public health sources.
-      </p>
-
       <ul>
         <li><strong>Target Indicators:</strong> Stunting, wasting, underweight</li>
         <li><strong>Demographics:</strong> Age, gender, region</li>
@@ -82,17 +85,15 @@
         <li>Stunting emerged as the most prevalent form of malnutrition</li>
         <li>Rural regions showed higher malnutrition rates than urban areas</li>
         <li>Children from low-income households were disproportionately affected</li>
-        <li>Access to healthcare and maternal education showed protective effects</li>
+        <li>Maternal education and healthcare access reduced malnutrition risk</li>
       </ul>
     </section>
 
     <section>
       <h2>Insights & Implications</h2>
       <p>
-        The analysis highlights the strong connection between socio-economic conditions
-        and child nutrition outcomes. Addressing malnutrition requires not only food
-        security interventions but also improvements in healthcare access, education,
-        and maternal support programs.
+        The findings highlight the importance of socio-economic interventions,
+        healthcare access, and maternal education in reducing child malnutrition.
       </p>
     </section>
 
@@ -106,12 +107,18 @@
       </ul>
     </section>
 
-    <section class="article-footer">
+    <!-- FOOTER ACTIONS -->
+    <section class="article-footer" style="margin-top:40px;">
       <p>
-        📌 <strong>Project Repository:</strong>
+        🔗 <strong>Project Repository:</strong>
         <a href="https://github.com/peter-munyalo/CHILD-MALNUTRION" target="_blank">
           View on GitHub
         </a>
+      </p>
+
+      <p style="margin-top:20px;">
+        <a href="../blog.html" class="blog-link">← Back to Blog</a> |
+        <a href="../index.html" class="blog-link">Back to Home</a>
       </p>
     </section>
 
