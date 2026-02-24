@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Environmental & Health Impacts of Agriculture Expansion in Kenya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main site styles -->
+  <link rel="stylesheet" href="../assets/style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- TOP NAV LINKS -->
+  <div class="article-nav" style="max-width:900px;margin:30px auto 0;padding:0 20px;">
+    <a href="../blog.html" class="back-link">← Back to Blog</a> |
+    <a href="../index.html" class="back-link">Home</a> |
+    <a href="https://github.com/peter-munyalo/agriculture_impacts_kenya"
+       target="_blank"
+       class="back-link">
+      View Project on GitHub →
+    </a>
+  </div>
+
+  <article class="blog-article">
+
+    <header class="article-header">
+      <h1>Environmental & Health Impacts of Agriculture Expansion in Kenya</h1>
+      <p class="article-meta">
+        Time Series · Environmental Economics · Public Health · Kenya
+      </p>
+    </header>
+
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        Agriculture is the backbone of Kenya’s economy, but its expansion often comes at a cost to the environment and may influence population health. This project quantifies the long‑term impacts of agricultural land growth on deforestation, freshwater withdrawals, child mortality, and malnutrition using two decades of World Bank data (1960–2023).
+      </p>
+      <p>
+        By applying rigorous time‑series econometric methods, the analysis reveals both immediate and delayed relationships, providing evidence for sustainable land‑use and health policy.
+      </p>
+    </section>
+
+    <section>
+      <h2>Research Questions</h2>
+      <ul>
+        <li>Does agricultural expansion reduce forest cover and increase water withdrawals?</li>
+        <li>Is agricultural growth associated with changes in under‑5 mortality and child malnutrition?</li>
+        <li>Do these effects occur immediately or with a lag?</li>
+        <li>What is the role of urbanisation and population growth in these dynamics?</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Dataset Description</h2>
+      <ul>
+        <li><strong>Source:</strong> World Bank Open Data (WDI)</li>
+        <li><strong>Indicators:</strong> Agricultural land (%), forest cover (%), freshwater withdrawals (%), under‑5 mortality, child malnutrition (underweight), population growth, urban population (%), electricity access, cereal yield.</li>
+        <li><strong>Time span:</strong> 1960–2023 (annual observations, with some gaps)</li>
+        <li><strong>Country:</strong> Kenya (national level)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Methodology</h2>
+      <ol>
+        <li>Data cleaning, merging of two datasets, and reshaping to wide format.</li>
+        <li>Exploratory data analysis (time‑series plots, correlation matrices, stationarity tests).</li>
+        <li>Time‑series regression with differenced variables and Newey‑West standard errors (to handle autocorrelation).</li>
+        <li>Robustness checks: using absolute agricultural land, including lagged variables, subsample analysis (pre‑/post‑1990), and variance inflation factor (VIF).</li>
+        <li>Granger causality tests to explore predictive relationships.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Key Findings</h2>
+      <ul>
+        <li><strong>Deforestation lag:</strong> A 1‑percentage‑point increase in agricultural land reduces forest cover by ~0.033 percentage points over two years (significant when lagged).</li>
+        <li><strong>No short‑term link to water withdrawals</strong> – possibly due to data limitations or irrigation not yet dominant.</li>
+        <li><strong>Child mortality</strong> is strongly driven by urbanisation and population decline, not directly by agriculture.</li>
+        <li><strong>Malnutrition</strong> shows a strong negative correlation with agricultural land (Pearson r = –0.90) – suggestive of food security benefits, but based on sparse data.</li>
+        <li><strong>Urbanisation</strong> emerged as the most consistent predictor of both environmental degradation and health improvement.</li>
+        <li>Granger causality tests were non‑significant, indicating contemporaneous rather than predictive relationships.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Insights & Implications</h2>
+      <p>
+        The delayed effect of agriculture on forests means that today's land decisions will affect ecosystems for years – highlighting the need for forward‑looking sustainable land management. Urbanisation’s dual role (environmental pressure vs. health gains) calls for integrated urban‑environmental planning. The strong malnutrition–agriculture correlation suggests that expanding agriculture can improve food security, but must be paired with health and nutrition programmes to translate into better child health.
+      </p>
+    </section>
+
+    <section>
+      <h2>Tools & Technologies</h2>
+      <ul>
+        <li>Python</li>
+        <li>Pandas & NumPy</li>
+        <li>Matplotlib & Seaborn</li>
+        <li>Statsmodels (OLS, Newey‑West, Granger causality, ADF tests)</li>
+        <li>Jupyter Notebook</li>
+      </ul>
+    </section>
+
+    <!-- FOOTER ACTIONS -->
+    <section class="article-footer" style="margin-top:40px;">
+      <p>
+        🔗 <strong>Project Repository:</strong>
+        <a href="https://github.com/peter-munyalo/agriculture_impacts_kenya" target="_blank">
+          View on GitHub
+        </a>
+      </p>
+
+      <p style="margin-top:20px;">
+        <a href="../blog.html" class="blog-link">← Back to Blog</a> |
+        <a href="../index.html" class="blog-link">Back to Home</a>
+      </p>
+    </section>
+
+  </article>
+
+</body>
+</html>
